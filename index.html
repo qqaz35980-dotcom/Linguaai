@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>LinguaAI</title>
 
-<link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="style.css">
 
-<meta name="theme-color" content="#0B1F3A">
+<link rel="manifest" href="manifest.json">
+
 </head>
 
 <body>
@@ -16,46 +18,83 @@
 <div class="container">
 
 <h1>🌐 LinguaAI</h1>
-<p>Penerjemah Suara Indonesia • English • 中文</p>
 
-<div class="row">
-<label>Dari</label>
+<p>AI Penerjemah Suara</p>
+
+
+<div class="card">
+
+<label>Dari Bahasa</label>
+
 <select id="fromLang">
+
 <option value="id">🇮🇩 Indonesia</option>
+
 <option value="en">🇺🇸 English</option>
-<option value="zh">🇨🇳 中文</option>
+
+<option value="zh">🇨🇳 Mandarin</option>
+
 </select>
-</div>
 
-<div class="swap">
-<button id="swapBtn">⇄</button>
-</div>
 
-<div class="row">
-<label>Ke</label>
+<button id="swapBtn">
+🔄 Tukar Bahasa
+</button>
+
+
+<label>Ke Bahasa</label>
+
 <select id="toLang">
+
 <option value="en">🇺🇸 English</option>
+
 <option value="id">🇮🇩 Indonesia</option>
-<option value="zh">🇨🇳 中文</option>
+
+<option value="zh">🇨🇳 Mandarin</option>
+
 </select>
+
+
+<button id="micBtn">
+🎤 Mulai Bicara
+</button>
+
+
+<div id="status">
+Siap digunakan
 </div>
 
-<button id="micBtn">🎤 Mulai Bicara</button>
 
-<div id="status">Siap digunakan</div>
+<textarea id="sourceText"
+placeholder="Kalimat asli...">
+</textarea>
 
-<textarea id="sourceText" placeholder="Teks asli..." readonly></textarea>
 
-<textarea id="translatedText" placeholder="Hasil terjemahan..." readonly></textarea>
+<textarea id="translatedText"
+placeholder="Hasil terjemahan...">
+</textarea>
+
 
 <div class="buttons">
-<button id="speakBtn">🔊 Dengarkan</button>
-<button id="copyBtn">📋 Salin</button>
+
+<button id="speakBtn">
+🔊 Dengarkan
+</button>
+
+<button id="copyBtn">
+📋 Salin
+</button>
+
+</div>
+
+
 </div>
 
 </div>
+
 
 <script src="app.js"></script>
 
 </body>
+
 </html>
