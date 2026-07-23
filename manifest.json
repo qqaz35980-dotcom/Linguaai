@@ -1,0 +1,15 @@
+{
+  "name": "LinguaAI",
+  "short_name": "LinguaAI",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#101820",
+  "theme_color": "#00c853",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
