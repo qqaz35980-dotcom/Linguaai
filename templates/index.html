@@ -2,20 +2,23 @@
 <html lang="id">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>LinguaAI</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
-<link rel="manifest" href="manifest.json">
+<link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
 
 </head>
+
 
 <body>
 
 <div class="container">
+
 
 <h1>🌐 LinguaAI</h1>
 
@@ -23,6 +26,7 @@
 
 
 <div class="card">
+
 
 <label>Dari Bahasa</label>
 
@@ -37,9 +41,11 @@
 </select>
 
 
+
 <button id="swapBtn">
 🔄 Tukar Bahasa
 </button>
+
 
 
 <label>Ke Bahasa</label>
@@ -55,9 +61,17 @@
 </select>
 
 
+
 <button id="micBtn">
 🎤 Mulai Bicara
 </button>
+
+
+
+<button id="conversationBtn">
+🗣️ Mode Percakapan
+</button>
+
 
 
 <div id="status">
@@ -65,35 +79,63 @@ Siap digunakan
 </div>
 
 
-<textarea id="sourceText"
+
+<textarea 
+id="sourceText"
 placeholder="Kalimat asli...">
 </textarea>
 
 
-<textarea id="translatedText"
+
+<textarea 
+id="translatedText"
 placeholder="Hasil terjemahan...">
 </textarea>
 
+<button id="translateBtn">
+🌐 Terjemahkan
+</button>
 
 <div class="buttons">
+
 
 <button id="speakBtn">
 🔊 Dengarkan
 </button>
 
+
 <button id="copyBtn">
 📋 Salin
 </button>
 
+<button id="installBtn" style="display:none;">
+📲 Install LinguaAI
+</button>
+
+
+</div>
+
+
+
+<h3>Riwayat Percakapan</h3>
+
+
+<div id="history">
+
+</div>
+
+
+
 </div>
 
 
 </div>
 
-</div>
 
 
-<script src="app.js"></script>
+<script src="{{ url_for('static', filename='history.js') }}"></script>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+
 
 </body>
 

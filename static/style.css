@@ -98,3 +98,12 @@ textarea{
 .buttons button{
     flex:1;
 }
+
+/* MODE PERCAKAPAN AKTIF */
+
+.conversation-active {
+
+background: #d32f2f !important;
+color: white !important;
+
+}
